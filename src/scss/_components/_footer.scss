@@ -4,6 +4,9 @@
   min-height: 599px;
   padding-top: 100px;
   background-color: $c-232323;
+  @include respond(max-small) {
+    padding-top: 50px;
+  }
 
   &__logotype {
     text-align: center;

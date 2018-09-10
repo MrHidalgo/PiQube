@@ -1,5 +1,18 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+  &--footer {
+    img  {
+      @include respond(max-small) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 52px;
+      }
+    }
+  }
+}
 
 // LOGOTYPE :: END
