@@ -1,0 +1,39 @@
+// VIDEO :: START
+
+.video {
+  position: relative;
+  background-color: $c-d7d7d7;
+  background-image: url("../img/img-video@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    color: $c-white;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    color: $c-white;
+    font-size: 24px;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+// VIDEO :: END

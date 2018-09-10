@@ -1,20 +1,29 @@
 $sprite: (
   btn-corner: (
     offset-x: 0px,
-    offset-y: -17px,
+    offset-y: -29px,
     width: 10px,
     height: 14px,
-    total-width: 18px,
-    total-height: 31px,
+    total-width: 47px,
+    total-height: 43px,
     image: '../img/sprite.png'
   ),
   list-check: (
-    offset-x: 0px,
+    offset-x: -29px,
     offset-y: 0px,
     width: 18px,
     height: 12px,
-    total-width: 18px,
-    total-height: 31px,
+    total-width: 47px,
+    total-height: 43px,
+    image: '../img/sprite.png'
+  ),
+  play-circle: (
+    offset-x: 0px,
+    offset-y: 0px,
+    width: 24px,
+    height: 24px,
+    total-width: 47px,
+    total-height: 43px,
     image: '../img/sprite.png'
   ),
 );
@@ -67,4 +76,7 @@ $sprite: (
 }
 .list-check:before {
   @include sprite(list-check);
+}
+.play-circle:before {
+  @include sprite(play-circle);
 }
