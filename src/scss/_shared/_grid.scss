@@ -4,6 +4,8 @@
 $maxWidth: 1350px;
 
 %grid {
+  z-index: 1;
+  position: relative;
   width: 100%;
   margin-right: auto;
   margin-left: auto;

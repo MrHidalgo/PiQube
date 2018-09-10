@@ -1,0 +1,50 @@
+// PLEDGES :: START
+
+-
+  var pledgesArr0 = [
+  "Spicy jalapeno bacon",
+  "Ipsum dolor amet",
+  "Shoulder doner pork"
+  ];
+  var pledgesArr1 = [
+  "Spicy jalapeno bacon",
+  "Ipsum dolor amet",
+  "Shoulder doner pork",
+  "Andouille salami",
+  "Drumstick boudin"
+  ];
+
+mixin pledgesBlock(classmMod, title, price, listArr, btnModClass, btnVal)
+  .pledges__block(class!= "pledges__block-" + classmMod)
+    p.pledges__block-title!= title
+    p.pledges__block-price!= "<span>$</span>" + price
+
+    div.pledges__block-line
+
+    ul.pledges__block-list
+      each val, idx in listArr
+        li
+          i.ic.list-check
+          span!= val
+
+    a.pledges__block-btn(
+    href="#"
+    title=""
+    class="btn " + btnModClass
+    )
+      span!= btnVal
+      i.ic.btn-corner
+
+
+section#pledges.pledges
+  h2.pledges__title.title!= "Pledges"
+
+  .c-grid
+    .pledges__block-wrap
+      +pledgesBlock("0", "Starter Pack", "89", pledgesArr0, "", "Make a Pledge")
+      +pledgesBlock("1", "Best Value", "229", pledgesArr1, "btn--gradient", "Make a Pledge")
+      +pledgesBlock("2", "Enterprise", "889", pledgesArr0, "", "Make a Pledge")
+      +pledgesBlock("3", "Farm", "999", pledgesArr0, "", "Make a Pledge")
+
+
+// PLEDGES :: END

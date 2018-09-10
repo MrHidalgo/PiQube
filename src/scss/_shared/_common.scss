@@ -2,7 +2,7 @@
 
 
 /* ICONS */
-.icon {
+.ic {
   &:before {
     content: "";
     display: block;
@@ -10,6 +10,53 @@
 }
 /* ICONS
 ==================== */
+
+.title {
+  z-index: 0;
+  position: absolute;
+  text-transform: uppercase;
+  line-height: 1;
+  color: rgba($c-black, 0.05);
+  font-size: 208px;
+  font-weight: 800;
+  @include respond(max-large) {
+    font-size: 208px;
+  }
+  @include respond(max-medium) {
+    font-size: 158px;
+  }
+  @include respond(max-small) {
+    font-size: 108px;
+  }
+  @include respond(max-extra-small) {
+    font-size: 58px;
+  }
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 179px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: $c-232323;
+  color: $c-white;
+  font-size: 16px;
+  font-weight: 600;
+
+  span {
+    margin-right: 10px;
+  }
+
+  &--gradient {
+    background-image: linear-gradient(0, rgb(0,70,190) 0%, rgb(0,70,190) 0%, rgb(0,115,255) 100%);
+  }
+}
 
 
 // COMMON :: END
