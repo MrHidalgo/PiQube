@@ -18,17 +18,7 @@ $object: (
     info                  : #33b5e5,
     warning               : #ff8800,
     danger                : #cc0000
-  ),
-  dimension : (
-    all                   : 100%,
-    fhd                   : 1920px,
-    hd                    : 1440px,
-    wide                  : 1200px,
-    desktop               : 992px,
-    tablet                : 768px,
-    mobile                : 576px,
-    mobile-xs             : 320px,
-  ),
+  )
 );
 
 ///
@@ -43,16 +33,12 @@ $c-success                : return-value(colors, success);
 $c-info                   : return-value(colors, info);
 $c-warning                : return-value(colors, warning);
 $c-danger                 : return-value(colors, danger);
-
-$d-all                    : return-value(dimension, all);
-$d-fhd                    : return-value(dimension, fhd);
-$d-hd                     : return-value(dimension, hd);
-$d-wide                   : return-value(dimension, wide);
-$d-desktop                : return-value(dimension, desktop);
-$d-tablet                 : return-value(dimension, tablet);
-$d-mobile                 : return-value(dimension, mobile);
-$d-mobile-xs              : return-value(dimension, mobile-xs);
-
 ///
 /// ADDITIONAL PALLET
 /// ===============
+$c-232323: #232323;
+$c-f2f2f2: #f2f2f2;
+$c-898989: #898989;
+$c-ed1466: #ed1466;
+$c-f7f7f7: #f7f7f7;
+$c-0073ff: #0073ff;

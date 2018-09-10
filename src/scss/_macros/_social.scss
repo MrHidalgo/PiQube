@@ -1,0 +1,31 @@
+// SOCIAL :: START
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 71px;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 100%;
+    background-color: $c-white;
+    color: $c-0073ff;
+
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// SOCIAL :: END

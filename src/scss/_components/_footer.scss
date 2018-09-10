@@ -1,5 +1,13 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  min-height: 599px;
+  padding-top: 100px;
+  background-color: $c-232323;
+
+  &__logotype {
+    text-align: center;
+  }
+}
 
 // FOOTER :: END
