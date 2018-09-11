@@ -12,10 +12,30 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include respond(max-medium) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include respond(max-medium) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      @include respond(max-medium) {
+        padding-bottom: 50px;
+      }
+    }
+
+    &-right {
+      @include respond(max-small) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+      }
     }
 
     &-cover {
@@ -23,6 +43,9 @@
       max-width: 636px;
       margin-left: auto;
       margin-right: auto;
+      @include respond(max-medium) {
+        max-width: 100%;
+      }
     }
 
     img {
@@ -39,6 +62,18 @@
     line-height: 1;
     font-size: 100px;
     font-weight: 800;
+    @include respond(max-small) {
+      padding-bottom: 30px;
+      font-size: 75px;
+    }
+    @include respond(max-extra-small) {
+      padding-bottom: 30px;
+      font-size: 55px;
+
+      br {
+        display: none;
+      }
+    }
 
     span {
       color: $c-ed1466;
@@ -51,6 +86,14 @@
     padding-bottom: 50px;
     line-height: 1.5;
     font-size: 24px;
+    @include respond(max-small) {
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+    @include respond(max-extra-small) {
+      padding-bottom: 30px;
+      font-size: 18px;
+    }
   }
 
   &__btn {
