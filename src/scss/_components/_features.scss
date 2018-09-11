@@ -5,6 +5,10 @@
   position: relative;
   padding-top: 130px;
   padding-bottom: 130px;
+  @include respond(max-small) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 
   &__title {
     top: 125px;
@@ -14,10 +18,24 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include respond(max-small) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      padding-left: 30px;
+      padding-right: 30px;
+      @include respond(max-small) {
+        padding-bottom: 30px;
+      }
     }
 
     img {
@@ -31,7 +49,10 @@
 
   &__block {
     display: flex;
-    padding-bottom: 61px;
+    padding-bottom: 60px;
+    @include respond(max-extra-small) {
+      padding-bottom: 30px;
+    }
 
     &:last-child {
       padding-bottom: 0;
@@ -40,22 +61,45 @@
 
     &-left {
       width: 92px;
+      padding-top: 15px;
+      @include respond(max-extra-small) {
+        width: 72px;
+      }
     }
 
     &-right {
       width: calc(100% - 92px);
+      @include respond(max-extra-small) {
+        width: calc(100% - 72px);
+      }
     }
 
     &-title {
       padding-bottom: 20px;
       font-size: 36px;
       font-weight: 800;
+      @include respond(max-medium) {
+        font-size: 32px;
+      }
+      @include respond(max-extra-small) {
+        font-size: 26px;
+        padding-bottom: 10px;
+      }
     }
 
     &-text {
       width: 100%;
       max-width: 441px;
       line-height: 1.5;
+      @include respond(max-medium) {
+        font-size: 16px;
+      }
+      @include respond(max-small) {
+        max-width: 100%;
+      }
+      @include respond(max-extra-small) {
+        font-size: 14px;
+      }
     }
   }
 }
