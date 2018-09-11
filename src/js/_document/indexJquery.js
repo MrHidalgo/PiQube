@@ -18,6 +18,16 @@ $(document).ready((ev) => {
    * CALLBACK
    * =============================================
    */
+  const parallaxTitle = () => {
+    if ($("[parallax-js]").length) {
+      $(function () {
+        $.stellar({
+          horizontalScrolling: false,
+          hideDistantElements: false
+        });
+      });
+    }
+  };
 
 
 
@@ -30,6 +40,8 @@ $(document).ready((ev) => {
     initObjectFitImages();
     // ...
     initSmoothScroll();
+    // ...
+    parallaxTitle();
   };
   initJquery();
 });

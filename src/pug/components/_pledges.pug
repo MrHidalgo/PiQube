@@ -37,7 +37,10 @@ mixin pledgesBlock(classmMod, title, price, listArr, btnModClass, btnVal)
 
 
 section#pledges.pledges
-  h2.pledges__title.title!= "Pledges"
+  h2.pledges__title.title(
+  parallax-js
+  data-stellar-ratio="0.6"
+  )!= "Pledges"
 
   .c-grid
     .pledges__block-wrap
