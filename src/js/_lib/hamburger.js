@@ -17,6 +17,6 @@ function initHamburger() {
       val.classList.toggle("is-hideScroll");
     });
 
-    mobileContainer.classList.toggle("is-open")
+    mobileContainer.classList.toggle("is-open");
   });
 }

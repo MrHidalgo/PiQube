@@ -38,10 +38,13 @@ $(document).ready((ev) => {
    */
   const headerLinkActive = () => {
     $(".header__link").on("click", (ev) => {
-      const elem = $(ev.currentTarget);
+      const elem = $(ev.currentTarget),
+        mobileContainer = document.querySelector(".header__wrapper-mobile");
 
       $(".header__link").removeClass("is-active");
       elem.addClass("is-active");
+
+      mobileContainer.classList.remove("is-open");
     });
     $(".nav__btn").on("click", (ev) => {
       const elem = $(ev.currentTarget),
