@@ -5,20 +5,46 @@
   position: relative;
   padding-top: 200px;
   padding-bottom: 200px;
+  @include respond(max-small) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   &__title {
     bottom: 0;
     left: 0;
     writing-mode: tb;
     transform: scale(-1);
+    @include respond(max-small) {
+      bottom: 50%;
+      transform: scale(-1) translateY(-50%);
+    }
   }
 
   &__wrapper {
     display: flex;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include respond(medium) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include respond(max-small) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      @include respond(max-extra-small) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
 
 
@@ -29,6 +55,9 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 200px;
+      @include respond(max-small) {
+        margin-bottom: 50px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -49,10 +78,18 @@
     padding-bottom: 50px;
     font-size: 24px;
     font-weight: bold;
+    @include respond(max-small) {
+      padding-top: 50px;
+      padding-bottom: 25px;
+      font-size: 20px;
+    }
   }
 
   &__text {
     padding-bottom: 10px;
+    @include respond(max-small) {
+      font-size: 14px;
+    }
 
     &--lh {
       line-height: 2;
