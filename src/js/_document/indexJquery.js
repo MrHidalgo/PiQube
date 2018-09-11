@@ -29,6 +29,7 @@ $(document).ready((ev) => {
     initPreventBehavior();
     initObjectFitImages();
     // ...
+    initSmoothScroll();
   };
   initJquery();
 });
