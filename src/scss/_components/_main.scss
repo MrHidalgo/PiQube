@@ -1,0 +1,72 @@
+// MAIN :: START
+
+.main {
+  position: relative;
+  padding-top: 185px;
+  padding-bottom: 85px;
+  @include respond(max-small) {
+    padding-top: 92px;
+    padding-bottom: 42px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-cover {
+      width: 100%;
+      max-width: 636px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__title {
+    padding-bottom: 50px;
+    line-height: 1;
+    font-size: 100px;
+    font-weight: 800;
+
+    span {
+      color: $c-ed1466;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 587px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    font-size: 24px;
+  }
+
+  &__btn {
+    margin-left: 0;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 25px;
+    width: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// MAIN :: END

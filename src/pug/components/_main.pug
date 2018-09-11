@@ -1,0 +1,33 @@
+// MAIN :: START
+
+section#main.main
+  .c-grid-fluid
+    .main__wrapper
+      .main__wrapper-left
+        .main__wrapper-cover
+          h1.main__title!= "H1 Header <br>Goes Here<span>.</span>"
+          p.main__text!= "Spicy jalapeno bacon ipsum dolor amet shoulder doner pork loin, andouille salami turkey pig flank drumstick boudin. Sausage pork loin sirloin."
+
+          a.main__btn(
+          href="#"
+          title=""
+          class="btn btn--gr"
+          )
+            span!= "Learn More"
+
+      .main__wrapper-right
+        img(
+          src="./img/img-main.png"
+          srcset="./img/img-main@2x.png 2x"
+          alt="" 
+          title=""
+         )
+
+  a(
+    href="#"
+    title=""
+    class="main__link"
+  )
+    i.ic.chevron-down
+
+// MAIN :: END

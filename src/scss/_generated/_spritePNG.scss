@@ -5,7 +5,7 @@ $sprite: (
     width: 36px,
     height: 18px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   bolt: (
@@ -14,7 +14,7 @@ $sprite: (
     width: 24px,
     height: 36px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   btn-corner: (
@@ -23,7 +23,16 @@ $sprite: (
     width: 10px,
     height: 14px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
+    image: '../img/sprite.png'
+  ),
+  chevron-down: (
+    offset-x: 0px,
+    offset-y: -72px,
+    width: 30px,
+    height: 18px,
+    total-width: 106px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   cloud: (
@@ -32,7 +41,7 @@ $sprite: (
     width: 36px,
     height: 26px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   lightbulb: (
@@ -41,7 +50,7 @@ $sprite: (
     width: 26px,
     height: 36px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   list-check: (
@@ -50,7 +59,7 @@ $sprite: (
     width: 18px,
     height: 12px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
   play-circle: (
@@ -59,7 +68,7 @@ $sprite: (
     width: 24px,
     height: 24px,
     total-width: 106px,
-    total-height: 67px,
+    total-height: 90px,
     image: '../img/sprite.png'
   ),
 );
@@ -115,6 +124,9 @@ $sprite: (
 }
 .btn-corner:before {
   @include sprite(btn-corner);
+}
+.chevron-down:before {
+  @include sprite(chevron-down);
 }
 .cloud:before {
   @include sprite(cloud);
