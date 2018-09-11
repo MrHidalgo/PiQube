@@ -6,7 +6,8 @@
  */
 function initHamburger() {
   const btn = document.querySelector("[hamburger-js]"),
-    hideScrollContainer = document.querySelectorAll("html, body");
+    hideScrollContainer = document.querySelectorAll("html, body"),
+    mobileContainer = document.querySelector(".header__wrapper-mobile");
 
   btn.addEventListener("click", (e) => {
 
@@ -16,5 +17,6 @@ function initHamburger() {
       val.classList.toggle("is-hideScroll");
     });
 
+    mobileContainer.classList.toggle("is-open")
   });
 }

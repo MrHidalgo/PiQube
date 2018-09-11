@@ -52,12 +52,15 @@
   font-weight: 600;
 
   &--gr {
-
     &:hover {
       &:after {
         opacity: 1 !important;
         @include transition(opacity);
       }
+    }
+
+    span {
+      margin-right: 0 !important;
     }
 
     &:after {

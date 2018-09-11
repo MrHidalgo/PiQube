@@ -1,7 +1,28 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
+  .c-grid-fluid
     .header__wrapper
+      .header__wrapper-left
+        a(href="/" title="" class="")
+          img(
+            src="./img/img-logotype-header.png"
+            srcset="./img/img-logotype-header@2x.png 2x"
+            alt="" title=""
+           )
+
+      .header__wrapper-mobile.animated
+        a.header__link(href="#main" title="" class="" anchor-js)!= "Overview"
+        a.header__link(href="#features" title="" class="" anchor-js)!= "Features"
+        a.header__link(href="#spec" title="" class="" anchor-js)!= "Specs"
+        a.header__link(href="#pledges" title="" class="" anchor-js)!= "Pledges"
+        a.header__btn(
+          href="#"
+          title=""
+          class="btn btn--gr"
+        )
+          span!= "Crowd Fund Us"
+
+      include ../macros/_hamburger
 
 // HEADER :: END

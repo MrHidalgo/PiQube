@@ -18,6 +18,9 @@ $(document).ready((ev) => {
    * CALLBACK
    * =============================================
    */
+  /**
+   *
+   */
   const parallaxTitle = () => {
     if ($("[parallax-js]").length) {
       $(function () {
@@ -27,6 +30,19 @@ $(document).ready((ev) => {
         });
       });
     }
+  };
+
+
+  /**
+   *
+   */
+  const headerLinkActive = () => {
+    $(".header__link").on("click", (ev) => {
+      const elem = $(ev.currentTarget);
+
+      $(".header__link").removeClass("is-active");
+      elem.addClass("is-active");
+    });
   };
 
 
@@ -40,8 +56,10 @@ $(document).ready((ev) => {
     initObjectFitImages();
     // ...
     initSmoothScroll();
+    initHamburger();
     // ...
     parallaxTitle();
+    headerLinkActive();
   };
   initJquery();
 });
