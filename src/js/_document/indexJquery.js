@@ -43,6 +43,15 @@ $(document).ready((ev) => {
       $(".header__link").removeClass("is-active");
       elem.addClass("is-active");
     });
+    $(".nav__btn").on("click", (ev) => {
+      const elem = $(ev.currentTarget),
+        elemDataId = elem.data("id");
+
+      console.log(elemDataId);
+
+      $(".header__link").removeClass("is-active");
+      $(".header__link[data-id='" + elemDataId + "']").addClass("is-active");
+    });
   };
 
 
