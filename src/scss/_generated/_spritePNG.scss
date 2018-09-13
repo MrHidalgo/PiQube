@@ -1,74 +1,47 @@
 $sprite: (
-  battery-full: (
-    offset-x: -70px,
-    offset-y: 0px,
-    width: 36px,
-    height: 18px,
-    total-width: 106px,
-    total-height: 90px,
-    image: '../img/sprite.png'
-  ),
-  bolt: (
-    offset-x: -41px,
-    offset-y: 0px,
-    width: 24px,
-    height: 36px,
-    total-width: 106px,
-    total-height: 90px,
-    image: '../img/sprite.png'
-  ),
   btn-corner: (
-    offset-x: -41px,
-    offset-y: -41px,
+    offset-x: -74px,
+    offset-y: 0px,
     width: 10px,
     height: 14px,
-    total-width: 106px,
-    total-height: 90px,
+    total-width: 84px,
+    total-height: 57px,
     image: '../img/sprite.png'
   ),
   chevron-down: (
     offset-x: 0px,
-    offset-y: -72px,
+    offset-y: -39px,
     width: 30px,
     height: 18px,
-    total-width: 106px,
-    total-height: 90px,
-    image: '../img/sprite.png'
-  ),
-  cloud: (
-    offset-x: 0px,
-    offset-y: 0px,
-    width: 36px,
-    height: 26px,
-    total-width: 106px,
-    total-height: 90px,
+    total-width: 84px,
+    total-height: 57px,
     image: '../img/sprite.png'
   ),
   lightbulb: (
     offset-x: 0px,
-    offset-y: -31px,
-    width: 26px,
-    height: 36px,
-    total-width: 106px,
-    total-height: 90px,
+    offset-y: 0px,
+    width: 40px,
+    height: 34px,
+    total-width: 84px,
+    total-height: 57px,
     image: '../img/sprite.png'
   ),
   list-check: (
-    offset-x: -70px,
-    offset-y: -52px,
+    offset-x: -35px,
+    offset-y: -39px,
     width: 18px,
     height: 12px,
-    total-width: 106px,
-    total-height: 90px,
+    total-width: 84px,
+    total-height: 57px,
     image: '../img/sprite.png'
   ),
   play-circle: (
-    offset-x: -70px,
-    offset-y: -23px,
+    offset-x: -45px,
+    offset-y: 0px,
     width: 24px,
     height: 24px,
-    total-width: 106px,
-    total-height: 90px,
+    total-width: 84px,
+    total-height: 57px,
     image: '../img/sprite.png'
   ),
 );
@@ -116,20 +89,11 @@ $sprite: (
   }
 }
 
-.battery-full:before {
-  @include sprite(battery-full);
-}
-.bolt:before {
-  @include sprite(bolt);
-}
 .btn-corner:before {
   @include sprite(btn-corner);
 }
 .chevron-down:before {
   @include sprite(chevron-down);
-}
-.cloud:before {
-  @include sprite(cloud);
 }
 .lightbulb:before {
   @include sprite(lightbulb);

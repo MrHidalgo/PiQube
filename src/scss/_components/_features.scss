@@ -65,6 +65,11 @@
       @include respond(max-extra-small) {
         width: 72px;
       }
+
+      i {
+        color: $c-ed1466;
+        font-size: 30px;
+      }
     }
 
     &-right {
@@ -99,6 +104,19 @@
       }
       @include respond(max-extra-small) {
         font-size: 14px;
+      }
+    }
+
+    &-link {
+      display: block;
+      margin-top: 15px;
+      color: $c-ed1466;
+      font-weight: 500;
+      @include transition(opacity);
+
+      &:hover {
+        opacity: 0.8;
+        @include transition(opacity);
       }
     }
   }
