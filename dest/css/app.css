@@ -1610,6 +1610,38 @@ input[type="text"] {
 }
 
 
+.works {
+  overflow: hidden;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .works {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+
+.works__title {
+  top: 125px;
+  left: 0;
+}
+
+
+.works__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .pledges {
   overflow: hidden;
   position: relative;
